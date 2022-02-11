@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/BettingHistoryItemTitleContainer">
+
+        <TextView
+            android:id="@+id/result_title"
+            style="@style/BettingHistoryItemTitleLeft" />
+
+        <TextView
+            android:id="@+id/result_status"
+            style="@style/BettingHistoryItemTitleRight"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/BettingHistoryItemDetailContainer"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/BettingHistoryItemDetailLeft"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/BettingHistoryItemDetailRight" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider15dp" />
+
+    <LinearLayout style="@style/BettingHistoryItemDetailContainer">
+
+        <TextView
+            style="@style/BettingHistoryItemDetailLeft"
+            android:text="比赛" />
+
+        <TextView
+            android:id="@+id/game"
+            style="@style/BettingHistoryItemDetailRight" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider15dp" />
+
+    <LinearLayout style="@style/BettingHistoryItemDetailContainer">
+
+        <TextView
+            style="@style/BettingHistoryItemDetailLeft"
+            android:text="竞猜" />
+
+        <TextView
+            android:id="@+id/betting"
+            style="@style/BettingHistoryItemDetailRight" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider15dp" />
+
+    <LinearLayout style="@style/BettingHistoryItemDetailContainer">
+
+        <TextView
+            style="@style/BettingHistoryItemDetailLeft"
+            android:text="投注" />
+
+        <TextView
+            android:id="@+id/coin"
+            style="@style/BettingHistoryItemDetailRight" />
+
+    </LinearLayout>
+
+    <!--<View style="@style/Divider15dp" />-->
+
+    <!--<LinearLayout style="@style/BettingHistoryItemDetailContainer">-->
+
+        <!--<TextView-->
+            <!--style="@style/BettingHistoryItemDetailLeft"-->
+            <!--android:text="结果" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/result"-->
+            <!--style="@style/BettingHistoryItemDetailRight" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

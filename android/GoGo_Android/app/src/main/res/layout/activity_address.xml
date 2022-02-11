@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/c07_bar"
+                    android:gravity="center_vertical"
+                    android:hint="收货人"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c08_text"
+                    android:textColorHint="@color/c09_tips"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1px"
+                    android:background="@color/c07_bar" />
+
+                <EditText
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/c07_bar"
+                    android:gravity="center_vertical"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/c08_text"
+                    android:textColorHint="@color/c09_tips"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1px"
+                    android:background="@color/c07_bar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/c07_bar"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_go_12"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="地区"
+                    android:textColor="@color/c09_tips"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1px"
+                    android:background="@color/c07_bar" />
+
+                <EditText
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c07_bar"
+                    android:gravity="start"
+                    android:hint="详细地址"
+                    android:minHeight="120dp"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp"
+                    android:textColorHint="@color/c09_tips" />
+
+                <TextView
+                    android:layout_width="271dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_button_50dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="update"
+                    android:text="保存"
+                    android:textColor="@color/c08_text"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

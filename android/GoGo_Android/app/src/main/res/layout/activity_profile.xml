@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/layout_top_bar" />
+
+        <LinearLayout
+            style="@style/ActivityProfileItem"
+            android:layout_marginTop="10dp"
+            android:onClick="selectAvatar">
+
+            <TextView
+                style="@style/ActivityProfileItemLeft"
+                android:layout_weight="1"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_go_12" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider15dp" />
+
+        <LinearLayout
+            style="@style/ActivityProfileItem"
+            android:onClick="updateNickname">
+
+            <TextView
+                style="@style/ActivityProfileItemLeft"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/nickname"
+                style="@style/ActivityProfileItemRight" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider15dp" />
+
+        <LinearLayout
+            style="@style/ActivityProfileItem"
+            android:onClick="selectGender">
+
+            <TextView
+                style="@style/ActivityProfileItemLeft"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/ActivityProfileItemRight" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/meFragmentItem"
+            android:layout_marginTop="10dp"
+            android:onClick="address"
+            android:text="我的地址" />
+
+        <TextView
+            style="@style/meFragmentItem"
+            android:layout_marginTop="10dp"
+            android:onClick="logout"
+            android:text="退出登录" />
+
+    </LinearLayout>
+</layout>

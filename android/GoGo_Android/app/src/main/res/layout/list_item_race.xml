@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/race_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c07_bar"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/c08_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c07_bar"
+                android:gravity="center_vertical"
+                android:minHeight="82dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/logo_a"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/team_a_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/c08_text"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="58dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/bg_button_50dp"
+                        android:gravity="center"
+                        android:textColor="@color/c08_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/c09_tips"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/logo_b"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/team_b_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/c08_text"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/betting_btn"
+                    android:layout_width="72dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_c01_3dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="竞猜"
+                    android:textColor="@color/c08_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1px"
+                android:background="@color/c07_bar" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ready_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_ready_80dp" />
+    </FrameLayout>
+</layout>

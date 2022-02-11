@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/layout_top_bar" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c07_bar"
+            android:gravity="start"
+            android:hint="请说出您遇到的问题或者建议"
+            android:minLines="4"
+            android:padding="10dp" />
+
+
+        <TextView
+            style="@style/CoinPlanActivityGroupItem"
+            android:text="反馈图片" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c07_bar"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:paddingRight="15dp">
+
+            <com.scrat.gogo.framework.view.SquareImageView
+                android:id="@+id/img_1"
+                style="@style/FeedbackImgItem"
+                android:onClick="selectImg" />
+
+            <com.scrat.gogo.framework.view.SquareImageView
+                android:id="@+id/img_2"
+                style="@style/FeedbackImgItem"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="invisible" />
+
+            <com.scrat.gogo.framework.view.SquareImageView
+                android:id="@+id/img_3"
+                style="@style/FeedbackImgItem"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/sr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/bg_button_50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:onClick="feedback"
+                android:text="反馈"
+                android:textColor="@color/c08_text"
+                android:textSize="17sp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+</layout>

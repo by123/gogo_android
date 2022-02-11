@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_border_c01_3"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:minWidth="108dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/c08_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/odds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c02_red"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</layout>

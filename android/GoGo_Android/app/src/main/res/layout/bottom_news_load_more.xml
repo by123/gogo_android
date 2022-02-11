@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/sf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp">
+
+                <View
+                    android:id="@+id/img"
+                    android:layout_width="92dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/c08_text" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/img"
+                    android:background="@color/c08_text" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/line1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/c08_text" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/line2"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/c08_text" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/line2"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@id/img"
+                    android:background="@color/c08_text" />
+
+            </RelativeLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/no_more"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="没有更多了" />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scrat.gogo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--Umeng-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+
+    <!--ALiPay-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:name=".GoGoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.news.detail.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.coin.CoinPlanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.shop.detail.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".module.about.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.race.betting.BettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.exchange.ExchangeHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.address.AddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.betting.BettingHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.nickname.NicknameActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.me.feedback.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".framework.view.SingleImgSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".framework.view.CropPhotoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--ALiPay-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <receiver android:name=".receiver.LoginReceiver">
+            <intent-filter>
+                <action android:name="com.scrat.gogo.receiver.login" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${CHANNEL_NAME}" />
+    </application>
+
+</manifest>

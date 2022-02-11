@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="90dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        android:src="@color/c01_blue" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c09_tips"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_appreciate_12dp"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/c09_tips" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname"
+        android:layout_toRightOf="@id/img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c08_text"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/comment"
+        android:layout_marginTop="8dp"
+        android:background="@color/c05_divider" />
+
+</RelativeLayout>

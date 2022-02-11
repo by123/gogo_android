@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/c09_tips"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/c10_icon"
+            android:textSize="12sp" />
+
+        <com.scrat.gogo.framework.richtext.RichTextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/c08_text"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:id="@+id/cover_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_play_circle_outline_white_80dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/more_news_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/c07_bar"
+                android:drawableLeft="@drawable/tip_group_item"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="更多文章"
+                android:textColor="@color/c08_text"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/more_news_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/group_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/c07_bar"
+            android:drawableLeft="@drawable/tip_group_item"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/c08_text"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</layout>

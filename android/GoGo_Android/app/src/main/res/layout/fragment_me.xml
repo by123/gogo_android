@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c06_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TopBarTitle"
+                android:text="我的" />
+
+            <LinearLayout
+                android:id="@+id/user_info"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/c07_bar"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/place_holder_circle_80dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/c08_text"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/coin_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="竞猜币"
+                        android:textColor="@color/c09_tips"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/c03_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recharge"
+                style="@style/meFragmentItem"
+                android:layout_marginTop="10dp"
+                android:text="充值" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1px"
+                android:background="@color/c07_bar" />
+
+            <TextView
+                android:id="@+id/betting"
+                style="@style/meFragmentItem"
+                android:text="竞猜历史" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1px"
+                android:background="@color/c07_bar" />
+
+            <TextView
+                android:id="@+id/exchange_history"
+                style="@style/meFragmentItem"
+                android:text="兑换记录" />
+
+            <TextView
+                android:id="@+id/setting"
+                style="@style/meFragmentItem"
+                android:layout_marginTop="10dp"
+                android:text="设置" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

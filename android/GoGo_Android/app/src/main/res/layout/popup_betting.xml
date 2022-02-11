@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/c07_bar"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="猜中预计可得 竞猜币"
+                android:textColor="@color/c03_yellow"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="当前可用竞猜币：计算中"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/coin_100"
+                    style="@style/PopupBettingItem"
+                    android:text="100" />
+
+                <TextView
+                    android:id="@+id/coin_500"
+                    style="@style/PopupBettingItem"
+                    android:layout_marginLeft="8dp"
+                    android:text="500" />
+
+                <TextView
+                    android:id="@+id/coin_1000"
+                    style="@style/PopupBettingItem"
+                    android:layout_marginLeft="8dp"
+                    android:text="1000" />
+
+                <TextView
+                    android:id="@+id/coin_5000"
+                    style="@style/PopupBettingItem"
+                    android:layout_marginLeft="8dp"
+                    android:text="5000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/betting_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_c01_c02_3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="立即竞猜"
+                    android:textColor="@color/c08_text"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（接受赔率变化）"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/layout_top_bar" />
+
+        <TextView
+            style="@style/CoinPlanActivityGroupItem"
+            android:text="请选择充值的数量" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/CoinPlanActivityGroupItem"
+            android:text="请选择支付方式" />
+
+        <TextView
+            android:id="@+id/weixin_pay"
+            style="@style/CoinPlanActivityPayWayItem"
+            android:drawableLeft="@drawable/ic_wxpay_29"
+            android:onClick="selectWeixinPay"
+            android:text="微信支付" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="1px"
+            android:background="@color/c07_bar" />
+
+        <TextView
+            android:id="@+id/alipay"
+            style="@style/CoinPlanActivityPayWayItem"
+            android:drawableLeft="@drawable/ic_alipay_29"
+            android:onClick="selectAlipay"
+            android:text="支付宝支付" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_button_50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="pay"
+            android:text="去支付"
+            android:textColor="@color/c08_text"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</layout>

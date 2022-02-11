@@ -1,0 +1,218 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/c07_bar</item>
+        <item name="colorPrimaryDark">@color/c07_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/c06_background</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="myTransparent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="mainActivityBottomBarItem">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/c10_icon</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="meFragmentItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/c07_bar</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableRight">@drawable/ic_go_12</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="CoinPlanActivityPayWayItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@color/c07_bar</item>
+    </style>
+
+    <style name="CoinPlanActivityGroupItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/c09_tips</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PopupBettingItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_border_c01_3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="BettingHistoryItemTitleContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@color/c07_bar</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="BettingHistoryItemTitleLeft">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="BettingHistoryItemTitleRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c09_tips</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Divider15dp">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/c07_bar</item>
+    </style>
+
+    <style name="BettingHistoryItemDetailContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/c07_bar</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="BettingHistoryItemDetailLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c09_tips</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BettingHistoryItemDetailRight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/c09_tips</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ActivityProfileItemRight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@drawable/ic_go_12</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/c09_tips</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="ActivityProfileItemLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="ActivityProfileItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/c07_bar</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PopupIosDialogBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/c07_bar</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="FeedbackImgItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/c06_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:src">@drawable/ic_add_c09_24dp</item>
+    </style>
+
+    <style name="TopBarTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/c07_bar</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/c08_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

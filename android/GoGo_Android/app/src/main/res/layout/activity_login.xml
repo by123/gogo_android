@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/etc_logo_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_border_c01_50"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/c08_text"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/send_sms_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:onClick="sendSmsCode"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="获取验证码"
+                android:textColor="@color/c08_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_border_c01_50"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/c08_text"
+            android:textSize="17sp" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/sr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button_50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:onClick="telLogin"
+                android:text="登录"
+                android:textColor="@color/c08_text"
+                android:textSize="17sp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="其他登录方式"
+            android:textColor="@color/c08_text"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:focusable="true"
+                android:onClick="wxLogin"
+                android:src="@drawable/ic_wx_50" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="navigateToDisclaimer"
+            android:text="隐私策略及免责声明"
+            android:textColor="@color/c09_tips"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</layout>
